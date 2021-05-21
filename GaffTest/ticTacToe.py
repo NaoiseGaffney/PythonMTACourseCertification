@@ -28,7 +28,7 @@ def playgame():
     playgame() sets the initial variables and runs the game (for-loop of 9 iterations (one per play)). If someone has
     won the game ends (break statement), otherwise it checkes whether it is 'X' or 'O' turn to play. Player is asked
     to enter a number from 1 to 9, or 'q' (any other key will work too) to quit. The updated gridLayout is printed.
-    checkifwon() is called after every play, after 5 iterations (minimum plays to win) to see if there is a winning
+    checkifwon() is called after 5 iterations (minimum plays to win) to see if there is a winning
     combination.
     :return: nothing.
     """
