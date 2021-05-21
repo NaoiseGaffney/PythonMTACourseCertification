@@ -54,6 +54,7 @@ def playgame():
                 gridLayout[chosenNumber] = play
             else:
                 print("\33[91mPlease try again, you can't select an already occupied square!\33[0m")
+                count -= 1
         except KeyError:            # 'q' or any other key except the integers 1 to 9 quits the game.
             break
 
