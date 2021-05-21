@@ -37,8 +37,9 @@ def playgame():
     cross = "X"     # Cross 'X'
     nought = "O"    # Nought 'O'
     won = False     # Variable won is False, until checkifwon() updates it to True when someone has won
+    maxCount = 9
 
-    for game in range(1,10):    # 9 iterations
+    while count < maxCount:     # 9 iterations, however, is modified if occupied square is selected.
         if won == True:         # If game is won, quit game
             break
 
@@ -55,6 +56,7 @@ def playgame():
             else:
                 print("\33[91mPlease try again, you can't select an already occupied square!\33[0m")
                 count -= 1
+                maxCount += 1
         except KeyError:            # 'q' or any other key except the integers 1 to 9 quits the game.
             break
 
