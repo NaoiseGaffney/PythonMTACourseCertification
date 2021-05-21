@@ -15,7 +15,7 @@ possibleWins = [["1","2","3"],["4","5","6"],["7","8","9"],["1","4","7"],
 
 def gamesetup():
     """
-    gamesetup() prints the title and creates the intial gridLayout numbered from 1 to 9:
+    gamesetup() prints the title and creates the initial gridLayout numbered from 1 to 9:
      1 | 2 | 3
     ---+---+---
      4 | 5 | 6
@@ -63,7 +63,6 @@ def playgame():
             else:
                 print("\33[91mPlease try again, you can't select an already occupied square!\33[0m")
                 count -= 1          # Decrease the count integer to ensure the correct turn is set by 'X' or 'O'
-                maxCount += 1       # Increase the iterator to correct the decrease to ensure we have 9 iterations
         except KeyError:            # 'q' or any other key except the integers 1 to 9 quits the game.
             break
 
