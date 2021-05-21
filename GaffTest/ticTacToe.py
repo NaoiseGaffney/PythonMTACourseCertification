@@ -37,7 +37,7 @@ def playgame():
     cross = "X"     # Cross 'X'
     nought = "O"    # Nought 'O'
     won = False     # Variable won is False, until checkifwon() updates it to True when someone has won
-    maxCount = 9
+    maxCount = 9    # Number of iterations for a game of Tic-Tac-Toe
 
     while count < maxCount:     # 9 iterations, however, is modified if occupied square is selected.
         if won == True:         # If game is won, quit game
@@ -55,8 +55,8 @@ def playgame():
                 gridLayout[chosenNumber] = play
             else:
                 print("\33[91mPlease try again, you can't select an already occupied square!\33[0m")
-                count -= 1
-                maxCount += 1
+                count -= 1          # Decrease the count integer to ensure the correct turn is set by 'X' or 'O'
+                maxCount += 1       # Increase the iterator to correct the decrease to ensure we have 9 iterations
         except KeyError:            # 'q' or any other key except the integers 1 to 9 quits the game.
             break
 
