@@ -41,8 +41,8 @@ def playgame():
     """
     count = 0       # count integer is used to decide whether 'X' or 'O' is played (modulo -> even/odd number)
     play = ""       # play string, updated with either cross ('X') or nought ('O')
-    cross = "X"     # Cross 'X'
-    nought = "O"    # Nought 'O'
+    cross = "\33[1mX\33[0m"     # Cross 'X', ANSI Code for Bold
+    nought = "\33[1mO\33[0m"    # Nought 'O', ANSI Code for Bold
     won = False     # Variable won is False, until checkifwon() updates it to True when someone has won
     maxCount = 9    # Number of iterations for a game of Tic-Tac-Toe
 
