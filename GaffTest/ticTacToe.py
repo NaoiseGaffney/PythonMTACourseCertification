@@ -1,3 +1,10 @@
+# Tic-Tac-Toe in Python 3 to Test Knowledge and Skills
+# Created Thursday the 20th and Friday the 21st of May 2021 by Naoise Gaffney - "Gaff"
+
+# Using: dictionaries, nested lists, functions, for-loops, if-else, try-except, nested if statements. Using ANSI
+# features, such as colour (red). There is room for improvement of the functionality and code, though works well for a
+# first attempt. Please feel free to use and improve.
+
 # Create Tic-Tac-Toe grid using a Dictionary: gridLayout. The values are printed as a numbered grid from 1 to 9, and
 # updated with 'X' and 'O' during the game. To check whether a wining combination is played, a list: possibleWins
 # defines the possible winning combinations.
