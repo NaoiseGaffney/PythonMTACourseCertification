@@ -84,6 +84,6 @@ def checkifwon(play):
                         print(f"\33[91m{play}\33[0m won!")
     return won
 
-# Calling the main functions to run the game Tic-Tac-Toe. No parameters.
+# Calling the main functions to run the game Tic-Tac-Toe. No arguments.
 gamesetup()
 playgame()
