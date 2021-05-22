@@ -1,4 +1,4 @@
-# Created 'diceRolls.py', to roll an 'n'-sided die 'x' times, provide roll statistics, and a 'forLucaTest()' function
+# Created 'diceRolls.py', to roll an 'n'-sided die 'x' times, provide roll statistics, and a 'forLucaTesta()' function
 # to award points to dice roll values.
 
 import random
