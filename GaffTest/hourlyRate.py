@@ -16,7 +16,7 @@ finally:
         salary = inputHours * inputRate
         if inputCurrencySymbol not in currencyList:
             inputCurrencySymbol = ""
-        print(f"Your salary is: {inputCurrencySymbol}{inputHours} * {inputCurrencySymbol}{inputRate} = {inputCurrencySymbol}{salary}")
+        print(f"Your salary is: {inputHours} * {inputCurrencySymbol}{inputRate} = {inputCurrencySymbol}{salary}")
 
 """
 inputHours = 0
