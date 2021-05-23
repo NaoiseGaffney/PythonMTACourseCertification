@@ -12,7 +12,7 @@ two = 0                                 # Variable 'six' to store the number of 
 one = 0                                 # Variable 'six' to store the number of times a one is rolled
 awardPoints = 0                         # Variable 'awardPoints' to store the points awarded to a roll combination
 
-# A for-loop to roll a six-sided die five times.
+# A for-loop to roll a six-sided die six times.
 for roll in range(6):                   # For-loop to roll the die 6 times.
     dieRoll = random.randint(1, 6)      # Roll the die and save the result in 'dieRoll'
     if dieRoll == 6:                    # If the die roll result is 6...
