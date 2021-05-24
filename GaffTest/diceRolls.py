@@ -87,6 +87,7 @@ def forLucaTesta(statisticsTupleOrderedResults):
     for value in statisticsTupleOrderedResults:
         print(f"Dice roll: {value[0]}, Number of times rolled: {value[1]}, Points scored:"
               f" {value[1]} * 1000 = {value[1]*1000} ")
+    return
 
 
 # Call Dice Functions
