@@ -47,8 +47,8 @@ def mid(string):
         return string[(len(string) // 2)]
 
 
-middleCharacter = mid("Six")
-print(middleCharacter)
+print("Six: ", mid("Six"))
+print("Five: ", mid("Five"))
 
 # 3. ----- * ----- * ----- 2/10 ----- * ----- * ----- Online status
 # The aim of this challenge is, given a dictionary of people's online status, to count the number of people who are online.

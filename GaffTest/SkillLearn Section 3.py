@@ -4,12 +4,12 @@ import os
 if os.path.isfile("TextFile.txt"):
     appendOrDelete = input("Do you want to append 'A' to this file, or delete 'D' it? ").upper().strip()
     if appendOrDelete == "A":
-        writeTextFile = open("TextFile.txt", "a")
+        writeTextFile = open("TextFile.txt", "a", encoding="utf-8")
     elif appendOrDelete == "D":
         os.remove("TextFile.txt")
-        writeTextFile = open("TextFile.txt", "w")
+        writeTextFile = open("TextFile.txt", "w", encoding="utf-8")
 else:
-    writeTextFile = open("TextFile.txt", "w")
+    writeTextFile = open("TextFile.txt", "w", encoding="utf-8")
 
 textContent = "\nNaoise Olof Seán Gaffney\n51 years young\n087-9774499"
 textContent = textContent + "\n" + input("Do you want to add text to the text file? ")
@@ -18,7 +18,7 @@ writeTextFile.close()
 
 # Opening/Reading a File.
 print("Open File.\n")
-openTextFile = open("TextFile.txt", "r")
+openTextFile = open("TextFile.txt", "r", encoding="utf-8")
 textFileContent = openTextFile.read()
 print("File Content:\n", textFileContent)
 
@@ -31,5 +31,5 @@ openTextFile.close()
 
 
 # Using 'with' instead (automatically closes the file).
-with open("WhileTextFile.txt", "w") as withWriteFile:
+with open("WhileTextFile.txt", "w", encoding="utf-8") as withWriteFile:
     withWriteFile.write(input("Please enter text to add to the file: "))

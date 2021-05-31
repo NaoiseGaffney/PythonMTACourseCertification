@@ -1,6 +1,6 @@
 # Get the name of the file and open it
 name = input('Enter file:')
-handle = open(name, 'r')
+handle = open(name, 'r', encoding="utf-8")
 
 # Count word frequency
 counts = dict()
