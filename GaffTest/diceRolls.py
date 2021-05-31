@@ -71,10 +71,11 @@ def statistics(rollListResults):
 
     dictRolls = {}
     for rolls in rollListResults:
-        if rolls in dictRolls:
-            dictRolls[rolls] += 1
-        else:
-            dictRolls[rolls] = 1
+        # if rolls in dictRolls:
+        #     dictRolls[rolls] += 1
+        # else:
+        #     dictRolls[rolls] = 1
+        dictRolls[rolls] = dictRolls.get(rolls, 0) + 1
     tuple_in_right_order = sorted(dictRolls.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
     return tuple_in_right_order
 
