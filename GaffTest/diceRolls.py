@@ -43,9 +43,10 @@ def rollDice(numSidesOfDice, numOfDiceRolled):
     :param numOfDiceRolled: determines the number of dice rolled.
     :return rollList: Contain the list of rolled dice results.
     """
-    rollList = []
-    for roll in range(numOfDiceRolled):
-        rollList.append(random.randint(1,numSidesOfDice))
+    # rollList = []
+    # for roll in range(numOfDiceRolled):
+    #     rollList.append(random.randint(1,numSidesOfDice))
+    rollList = [random.randint(1,numSidesOfDice) for roll in range(numOfDiceRolled)]
 
     return rollList
 

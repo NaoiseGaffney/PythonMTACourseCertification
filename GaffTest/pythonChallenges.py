@@ -255,20 +255,20 @@ print(is_anagramEasy("listens", "silents"))
 # [1, 2, 3, 4]
 print("\n10. ----- * ----- * ----- 3/10 ----- * ----- * ----- Flatten a list\n")
 
-def flatten(nestedList):
-    flatList = [item for sublist in nestedList for item in sublist]
-    return flatList
+def flatten(nested_list):
+    flat_list = [item for sublist in nested_list for item in sublist]
+    return flat_list
 
-def flattenLong(nestedList):
-    flatList = []
-    for sublist in nestedList:
+def flatten_long(nested_list):
+    flat_list = []
+    for sublist in nested_list:
         for item in sublist:
-            flatList.append(item)
-    return flatList
+            flat_list.append(item)
+    return flat_list
 
 print("Flatten: ", flatten([[1, 2], [3, 4], [5, 6]]))
-print("Flatten nested For-loops: ", flattenLong([[1, 2], [3, 4], [5, 6]]))
-flatten = lambda nestedList: [item for sublist in nestedList for item in sublist]
+print("Flatten nested For-loops: ", flatten_long([[1, 2], [3, 4], [5, 6]]))
+flatten = lambda nested_list: [item for sublist in nested_list for item in sublist]
 print("Flatten Lambda: ", flatten([[1, 2], [3, 4], [5, 6]]))
 
 # 11. ----- * ----- * ----- 3/10 ----- * ----- * ----- Min-maxing
