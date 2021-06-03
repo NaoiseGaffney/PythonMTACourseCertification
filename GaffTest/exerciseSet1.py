@@ -53,12 +53,10 @@ print("\33[91m\nQuestion 3 - Leap Year: \33[0m")
 
 def IsYearLeap(year):
     """
-    Checks whether a year is a Leap Year. Centuries that are divisible by 400 but not 100 are Leap Years. Otherwise
-    all other years that are divisible by 4 are Leap Years.
-    Rules: Leap years occur on years where the second two digits (AD only) are divisible by 4. In the event of the last
-    two digits being 00, the first two digits must also be divisible by 4 for the year to be a leap year. For BC,
-    counting starts at 1, so there is no year 0. This means that the leap years are offset by 1 and can be calculated
-    by the same method as above, but with the year number increased by 1: https://www.howtocreate.co.uk/php/leapyear.php
+    Checks whether a year is a Leap Year. Years (centuries) that are divisible by 400 are Leap Years (for example 2000).
+    Years (centuries) not divisible by 400 but divisible by 100 are not Leap Years (for example 1900). Years not
+    divisible by 400, and not divisible by 100, yet divisible by 4 are Leap Years (for example 2016). Divisible in this
+    case means modulo with no remainder (year % 400 == 0, year % 100 == 0, year % 4 == 0).
     :param year: year is an integer (negative or positive)
     :return: True if a Leap Year, or False if not.
     """
@@ -100,12 +98,10 @@ days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]    # List of nu
 
 def IsYearLeap(year):
     """
-    Checks whether a year is a Leap Year. Centuries that are divisible by 400 but not 100 are Leap Years. Otherwise
-    all other years that are divisible by 4 are Leap Years.
-    Rules: Leap years occur on years where the second two digits (AD only) are divisible by 4. In the event of the last
-    two digits being 00, the first two digits must also be divisible by 4 for the year to be a leap year. For BC,
-    counting starts at 1, so there is no year 0. This means that the leap years are offset by 1 and can be calculated
-    by the same method as above, but with the year number increased by 1: https://www.howtocreate.co.uk/php/leapyear.php
+    Checks whether a year is a Leap Year. Years (centuries) that are divisible by 400 are Leap Years (for example 2000).
+    Years (centuries) not divisible by 400 but divisible by 100 are not Leap Years (for example 1900). Years not
+    divisible by 400, and not divisible by 100, yet divisible by 4 are Leap Years (for example 2016). Divisible in this
+    case means modulo with no remainder (year % 400 == 0, year % 100 == 0, year % 4 == 0).
     :param year: year is an integer (negative or positive)
     :return: True if a Leap Year, or False if not.
     """
@@ -160,13 +156,11 @@ print(sum(days_in_month))                                           # Validating
 
 def IsYearLeap(year):
     """
-    Checks whether a year is a Leap Year. Centuries that are divisible by 400 but not 100 are Leap Years. Otherwise
-    all other years that are divisible by 4 are Leap Years.
-    Rules: Leap years occur on years where the second two digits (AD only) are divisible by 4. In the event of the last
-    two digits being 00, the first two digits must also be divisible by 4 for the year to be a leap year. For BC,
-    counting starts at 1, so there is no year 0. This means that the leap years are offset by 1 and can be calculated
-    by the same method as above, but with the year number increased by 1: https://www.howtocreate.co.uk/php/leapyear.php
-    :param year: year is an integer.
+    Checks whether a year is a Leap Year. Years (centuries) that are divisible by 400 are Leap Years (for example 2000).
+    Years (centuries) not divisible by 400 but divisible by 100 are not Leap Years (for example 1900). Years not
+    divisible by 400, and not divisible by 100, yet divisible by 4 are Leap Years (for example 2016). Divisible in this
+    case means modulo with no remainder (year % 400 == 0, year % 100 == 0, year % 4 == 0).
+    :param year: year is an integer (negative or positive)
     :return: True if a Leap Year, or False if not.
     """
     if (year % 400) == 0:
@@ -205,7 +199,7 @@ def DayOfYear(year, month, day):
     """
     total_days = 0
     # Validate the date ranges, months (1 to 12), and days (correct number of days per month), including Leap Year.
-    if 0 < month <= 12 and (0 < day <= days_in_month[month - 1] or (IsYearLeap(year) and 2 == month <= days_in_month[month - 1] +1)):
+    if 0 < month <= 12 and (0 < day <= days_in_month[month - 1] or (IsYearLeap(year) and month == 2)):
         # January is easy, it's the number of days as defined by the value in 'day'.
         if month == 1:
             total_days = day
