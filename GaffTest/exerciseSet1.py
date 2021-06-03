@@ -173,17 +173,17 @@ def IsYearLeap(year):
         return False
 
 
-def DaysInMonth(year, month):
-    """
-    Checks number of days per months, including Leap Years (February 29th).
-    :param year: year is an integer (negative or positive)
-    :param month: month is an integer that is checked against the list 'days_in_month' to calculate days.
-    :return: 29 for a Leap Year February, or the number of days in the month.
-    """
-    if IsYearLeap(year) and month == 2:
-        return 29
-    else:
-        return days_in_month[month - 1]
+# def DaysInMonth(year, month):
+#     """
+#     Checks number of days per months, including Leap Years (February 29th).
+#     :param year: year is an integer (negative or positive)
+#     :param month: month is an integer that is checked against the list 'days_in_month' to calculate days.
+#     :return: 29 for a Leap Year February, or the number of days in the month.
+#     """
+#     if IsYearLeap(year) and month == 2:
+#         return 29
+#     else:
+#         return days_in_month[month - 1]
 
 
 def DayOfYear(year, month, day):
@@ -221,8 +221,12 @@ def DayOfYear(year, month, day):
 
 # Performing extended positive and negative tests.
 print("DayOfYear(1900, 2, 29)", DayOfYear(1900, 2, 29))
+print("DayOfYear(1900, 2, 30)", DayOfYear(1900, 2, 30))
+print("DayOfYear(1900, 2, 31)", DayOfYear(1900, 2, 31))
 print("DayOfYear(1900, 2, 28)", DayOfYear(1900, 2, 28))
 print("DayOfYear(2000, 1, 31)", DayOfYear(2000, 1, 31))
+print("DayOfYear(2000, 1, 33)", DayOfYear(2000, 1, 33))
+print("DayOfYear(2000, 5, 38)", DayOfYear(2000, 5, 38))
 print("DayOfYear(2000, 1, 32)", DayOfYear(2000, 1, 32))
 print("DayOfYear(2000, 12, 31)", DayOfYear(2000, 12, 31))
 print("DayOfYear(2000, 2, 28)", DayOfYear(2000, 2, 28))
