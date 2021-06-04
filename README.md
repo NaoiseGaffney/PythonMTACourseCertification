@@ -1,4 +1,4 @@
-# PythonMTACourseCertification
+# Python MTA Course Certification
 Python MTA Course and Certification above-and-beyond the course development. Honing my skills.
 
 ## Code3 is course code.
@@ -10,7 +10,7 @@ Using: dictionaries, nested lists, functions, for-loops, if-else, try-except, ne
 
 #### [Dice Rolls](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/diceRolls.py)
 Die/dice rolls in Python 3 to Test Knowledge and Skills
-Using: functions, try-except, for loops, if-else, and a lambda function. Dictionaries, lists, and tuples. There is room for improvement of the functionality and code, though works well for a first attempt. Please feel free to use and improve.
+Using: functions, try-except, for loops, if-else, and a lambda function. Dictionaries, lists, and tuples. There is room for improvement of the functionality and code, though works well for a first attempt. Please feel free to use and improve. [Video Explanation of the Code on YouTube](https://youtu.be/mCA6csNAtcE)
 
 #### [Temperature Conversion](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/temperatureConversion.py)
 Enter temperature in either Celsius followed by a 'C' or Fahrenheit followed by an 'F'.
