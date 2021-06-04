@@ -20,13 +20,12 @@ while player_rps != "q":
     # 'q' for quit, printing end-of-game statistics.
     # Handles any incorrect entries, to 'continue' to the start of the While-loop, skipping the evaluations code block.
     if player_rps == "r":
-        player_rps = "rock '()'"
+        player_rps = rps_list[0]
     elif player_rps == "p":
-        player_rps = "paper '[]'"
+        player_rps = rps_list[1]
     elif player_rps == "s":
-        player_rps = "scissors 'db'"
+        player_rps = rps_list[2]
     elif player_rps == "q":
-        print(f"Game statistics for this round:\nPlayer => Wins: {wins}, Draws: {draws}, Losses: {losses}.")
         exit(-1)
     else:
         print("Please try again!")
@@ -42,3 +41,6 @@ while player_rps != "q":
     else:                                           # If neither a draw or a win, it's a loss.
         losses += 1                                 # Add 1 to losses for statistics.
         print(f"You lost! :-( You played {player_rps}, and the computer played {computer_rps}.")
+
+    # Print the game statistics after each round.
+    print(f"Game statistics for this round:\nPlayer => Wins: {wins}, Draws: {draws}, Losses: {losses}.")

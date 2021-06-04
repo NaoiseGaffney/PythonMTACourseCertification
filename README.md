@@ -4,6 +4,7 @@ Python MTA Course and Certification above-and-beyond the course development. Hon
 ## Code3 is course code.
 ## GaffTest is my code (and copied code snippets)
 ### Code Skills - My Python Code
+Programming is essentially solving a big problem by breaking it down into smaller problems, solving those smaller problems and subsequently solving the bigger problem.
 #### [Tic-Tac-Toe](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/ticTacToe.py)
 > Tic-Tac-Toe in Python 3 to Test Knowledge and Skills
 > Using: dictionaries, nested lists, functions, for-loops, if-else, try-except, nested if statements. Using ANSI features, such as colour (red). There is room for improvement of the functionality and code, though works well for a first attempt. Please feel free to use and improve.
@@ -24,7 +25,7 @@ Python MTA Course and Certification above-and-beyond the course development. Hon
 #### [Game: Rock, Paper, Scissors](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/rockPaperScissors.py)
 > Simple Rock, Paper, Scissors game. Has plenty of comments to understand the logic, and provides ample room for improvement.
 > A walkthrough of creating Rock Paper Scissors in Python from scratch, covering approach to solving the programming problem, using the PyCharm Debugger, and ideas for improvement.
-> [Video Walkthrough of the Code on YouTube (from start to finish)] (https://www.youtube.com/watch?v=oJHE5C6E_Xw&ab_channel=NaoiseGaffney)
+> [Video Walkthrough of the Code on YouTube (from start to finish)](https://youtu.be/oJHE5C6E_Xw)
 ---
 #### [Python Principles Challenges](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/pythonChallenges.py)
 > Mine and PP solutions to the challenges, except one I'm still working on (Solution Validation challenge).
