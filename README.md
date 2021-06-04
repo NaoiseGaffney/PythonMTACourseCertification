@@ -21,3 +21,15 @@ Enter temperature in either Celsius followed by a 'C' or Fahrenheit followed by 
 
 #### [Hourly Rate](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/hourlyRate.py)
 Simple hourly rate calculator. Use currencysymbol, hours worked, and hourly rate.
+
+#### [MTA Exercises (Challenges)](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/exerciseSet1.py)
+Contains answers (Python code) to the 6 MTA exercises (challenges) created by H-Tech.
+
+#### [Game: Rock, Paper, Scissors](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/rockPaperScissors.py)
+Simple Rock, Paper, Scissors game. Has plenty of comments to understand the logic, and proivdes ample room for improvement.
+
+#### [Python Principles Challenges](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/pythonChallenges.py)
+Mine and PP solutions to the challenges, except one I'm still working on (Solution Validation challenge).
+
+#### [Python List/Dict Comprehensions](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/comprehensionInPython.py)
+Refining List/Dict Comprehension skills. Writing "long" code first, before writing a Compehension equivalent.
