@@ -34,13 +34,13 @@ while player_rps != "q":
     # Evaluations, draw or win or loss. Counters for statistics.
     if player_rps == computer_rps:                  # If both are equal (same choice), it's a draw.
         draws += 1                                  # Add 1 to draws for statistics.
-        print(f"A draw! :-| You played {player_rps}, and the computer played {computer_rps}.")
+        print(f"\33[97m\33[44m A draw! :-| You played {player_rps}, and the computer played {computer_rps}. \33[0m")
     elif [player_rps, computer_rps] in win_list:    # If player has a winning combination, it's a win.
         wins += 1                                   # Add 1 to wins for statistics.
-        print(f"You won! :-) You played {player_rps}, and the computer played {computer_rps}.")
+        print(f"\33[97m\33[42m You won! :-) You played {player_rps}, and the computer played {computer_rps}. \33[0m")
     else:                                           # If neither a draw or a win, it's a loss.
         losses += 1                                 # Add 1 to losses for statistics.
-        print(f"You lost! :-( You played {player_rps}, and the computer played {computer_rps}.")
+        print(f"\33[97m\33[41m You lost! :-( You played {player_rps}, and the computer played {computer_rps}. \33[0m")
 
     # Print the game statistics after each round.
-    print(f"Game statistics for this round:\nPlayer => Wins: {wins}, Draws: {draws}, Losses: {losses}.")
+    print(f"Game statistics for this round:\nPlayer => \33[97m\33[42m Wins: {wins} \33[0m, \33[97m\33[44m Draws: {draws} \33[0m, \33[97m\33[41m Losses: {losses}. \33[0m")
