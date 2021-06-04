@@ -16,13 +16,15 @@ Python MTA Course and Certification above-and-beyond the course development. Hon
 > Enter temperature in either Celsius followed by a 'C' or Fahrenheit followed by an 'F'.
 ---
 #### [Hourly Rate](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/hourlyRate.py)
-> Simple hourly rate calculator. Use currencysymbol, hours worked, and hourly rate.
+> Simple hourly rate calculator. Use currency symbol, hours worked, and hourly rate.
 ---
 #### [MTA Exercises (Challenges)](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/exerciseSet1.py)
 > Contains answers (Python code) to the 6 MTA exercises (challenges) created by H-Tech.
 ---
 #### [Game: Rock, Paper, Scissors](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/rockPaperScissors.py)
 > Simple Rock, Paper, Scissors game. Has plenty of comments to understand the logic, and provides ample room for improvement.
+> A walkthrough of creating Rock Paper Scissors in Python from scratch, covering approach to solving the programming problem, using the PyCharm Debugger, and ideas for improvement.
+> [Video Walkthrough of the Code on YouTube (from start to finish)] (https://www.youtube.com/watch?v=oJHE5C6E_Xw&ab_channel=NaoiseGaffney)
 ---
 #### [Python Principles Challenges](https://github.com/NaoiseGaffney/PythonMTACourseCertification/blob/master/GaffTest/pythonChallenges.py)
 > Mine and PP solutions to the challenges, except one I'm still working on (Solution Validation challenge).
