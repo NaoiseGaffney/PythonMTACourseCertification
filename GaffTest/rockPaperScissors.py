@@ -30,16 +30,15 @@ while player_rps != "q":
         exit(-1)
     else:
         print("Please try again!")
-        player_rps = False      # Set 'player_rps' to False to ensure no evaluation is performed -> While-loop.
+        continue        # Continue to the start of the While-loop, skipping the next code block.
 
-    # Evaluations. First check to see that an incorrect entry/input was made, then evaluate draw or win or loss.
-    if player_rps != False:     # If player entered an incorrect choice, 'player_rps' is False. Skip next code block.
-        if player_rps == computer_rps:                  # If both are equal (same choice), it's a draw.
-            draws += 1      # Add 1 to draws for statistics.
-            print(f"A draw! :-| You played {player_rps}, and the computer played {computer_rps}.")
-        elif [player_rps, computer_rps] in win_list:    # If player has a winning combination, it's a win.
-            wins += 1       # Add 1 to wins for statistics.
-            print(f"You won! :-) You played {player_rps}, and the computer played {computer_rps}.")
-        else:                                           # If neither a draw or a win, it's a loss.
-            losses += 1     # Add 1 to losses for statistics.
-            print(f"You lost! :-( You played {player_rps}, and the computer played {computer_rps}.")
+    # Evaluations, draw or win or loss. Counters for statistics.
+    if player_rps == computer_rps:                  # If both are equal (same choice), it's a draw.
+        draws += 1                                  # Add 1 to draws for statistics.
+        print(f"A draw! :-| You played {player_rps}, and the computer played {computer_rps}.")
+    elif [player_rps, computer_rps] in win_list:    # If player has a winning combination, it's a win.
+        wins += 1                                   # Add 1 to wins for statistics.
+        print(f"You won! :-) You played {player_rps}, and the computer played {computer_rps}.")
+    else:                                           # If neither a draw or a win, it's a loss.
+        losses += 1                                 # Add 1 to losses for statistics.
+        print(f"You lost! :-( You played {player_rps}, and the computer played {computer_rps}.")
