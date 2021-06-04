@@ -18,7 +18,7 @@ while player_rps != "q":
     player_rps = input("\nPlease enter 'r = rock' or 'p = paper' or 's = scissors' or q to quit: ").strip().lower()
     # Player choice is set to full string for later comparison with the computer's random choice.
     # 'q' for quit, printing end-of-game statistics.
-    # Handles any incorrect entries, and sets 'player_rps = False' to check later on so as to skip the evaluations.
+    # Handles any incorrect entries, to 'continue' to the start of the While-loop, skipping the evaluations code block.
     if player_rps == "r":
         player_rps = "rock '()'"
     elif player_rps == "p":
