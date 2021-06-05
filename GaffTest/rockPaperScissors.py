@@ -10,8 +10,8 @@ rps_list = ["rock '()'", "paper '[]'", "scissors 'db'"]
 player_rps = ""
 draws = wins = losses = 0
 
-# While-loop continues until player selects 'q' to quit.
-while player_rps != "q":
+# While-loop (While True:) continues until player selects 'q' to quit.
+while True:
     computer_rps = random.randint(0, 2)     # Random number from 0 to 2, rps_list[] index.
     computer_rps = rps_list[computer_rps]   # Save "rock '()'" or "paper '[]'" or "scissors 'db'" string.
     # Ask for player input. Remove whitespaces 'strip()' and convert all entries to lower-case 'lower()'.
@@ -43,4 +43,5 @@ while player_rps != "q":
         print(f"\33[97m\33[41m You lost! :-( You played {player_rps}, and the computer played {computer_rps}. \33[0m")
 
     # Print the game statistics after each round.
-    print(f"Game statistics for this round:\nPlayer => \33[97m\33[42m Wins: {wins} \33[0m, \33[97m\33[44m Draws: {draws} \33[0m, \33[97m\33[41m Losses: {losses}. \33[0m")
+    print(f"Game statistics for this round:\nPlayer => \33[97m\33[42m Wins: {wins} \33[0m, \33[97m\33[44m "
+          f"Draws: {draws} \33[0m, \33[97m\33[41m Losses: {losses}. \33[0m")
